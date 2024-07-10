@@ -12,17 +12,6 @@ The script should take an argument, and the argument should be the location to c
 
 Use the proj1B_checker Download proj1B_checkerscript to check your work as follows: first, run your script with an argument, “bash proj1B tmp” (for example). Then, run the checker script with the same argument, “bash proj1B_checker tmp” for example. The checker script will echo a congratulatory message if it thinks your work is satisfactory. 
 
-What to turn in? One file: proj1B (your script). 
-
-One last thing: it will probably take at least a few tries to get your script right.  When you create dir3 with permissions 000, it can be tricky to remove.  Here is how I did it:
-
-bash ./proj1B tmp
-bash ./proj1B_checker tmp # this script told me I had a failure
-chmod -R 755 tmp  # recursively changes permissions to something that can be read and written over (i.e., deleted)
-rm -Rf tmp # deletes "tmp" and everything within tmp (recursive) ... be careful with this ... once you delete something in Unix, it is gone forever
-
-and then started the cycle over again.
-
  
 
 A final note: those of you familiar with Unix may be aware of "sudo" which lets you bypass various permission issues.  Your script should not require sudo.  If you feel like you need sudo, then I encourage you to rethink the sequence of operations you are doing.
